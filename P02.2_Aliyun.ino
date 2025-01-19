@@ -117,11 +117,11 @@ void onMqttMessage(int messageSize) {
       if(value ==0) {
         //关
         Serial.println("off");
-        digitalWrite(4,HIGH);
+        digitalWrite(4,LOW);
       } else {
         //开
         Serial.println("on");
-        digitalWrite(4,LOW);
+        digitalWrite(4,HIGH);
       }
       inputString="";
     }
